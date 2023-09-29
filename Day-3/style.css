@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Impact, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.d-flex {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.container {
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    margin: 70px auto;
+    max-width: 600px;
+    resize: horizontal;
+    overflow: auto;
+}
+
+.form__btn {
+    background-color: #3C8AFF;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 12px;
+    height: 31px;
+    line-height: 15px;
+    padding: 8px 16px;
+    width: 60px;
+}
+
+.form__btn--danger {
+    background: #EC4747;
+}
+
+.form__label {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    margin-bottom: 8px;
+}
+
+.form__label--required::after {
+    color: #EC4747;
+    content: '*';
+}
+
+.form__input {
+    background-color: #F5F3F3;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    outline: none;
+    padding: 8px 10px;
+    width: 100%;
+}
+
+.form__select {
+    background-color: #DDDDDD;
+    border: none;
+    border: 1px solid #DDDDDD;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    flex: 1;
+    outline: none;
+    padding: 8px 10px;
+}
+
+.form__select+input {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    flex: 10;
+}
+
+.form__radio {
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+}
+
+.form__radio>div {
+    gap: 12px;
+}
+
+.form__radio label {
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.form__radio input {
+    margin: 0;
+    height: 20px;
+    width: 20px;
+    padding: 12px;
+}
+
+.form__checkbox {
+    gap: 12px;
+}
+
+.form__checkbox>div {
+    gap: 8px
+}
+
+.form__checkbox label {
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.form__checkbox input {
+    margin: 0;
+    height: 18px;
+    width: 18px;
+}
+
+.form__header {
+    border-bottom: 1px solid #DDDDDD;
+    padding: 10px 20px;
+}
+
+.form__header h3 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    margin: 0;
+    text-align: left;
+}
+
+.form__body {
+    align-items: stretch;
+    border-bottom: 1px solid #DDDDDD;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+}
+
+.form__mobile {
+    gap: 0;
+}
+
+.form__footer {
+    gap: 12px;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
